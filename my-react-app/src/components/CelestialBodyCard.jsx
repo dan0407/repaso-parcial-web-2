@@ -7,7 +7,7 @@ const CelestialBodyCard = ({ body }) => {
 
 	// Log the body object to the console
 	useEffect(() => {
-		console.log('Celestial Body:', body);
+		
 	}, [body]);
 
 	return (
