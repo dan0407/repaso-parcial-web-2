@@ -6,9 +6,7 @@ const CelestialBodyCard = ({ body }) => {
 	const navigate = useNavigate();
 
 	// Log the body object to the console
-	useEffect(() => {
-		
-	}, [body]);
+	useEffect(() => {}, [body]);
 
 	return (
 		<Card>

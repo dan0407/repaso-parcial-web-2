@@ -30,11 +30,12 @@ const HomePage = () => {
 		const fetchBodies = async () => {
 			try {
 				const response = await axios.get('https://api.le-systeme-solaire.net/rest.php/bodies?rowData=false');
-				console.log(response.data);
+				console.log('Respuesta completa:', response.data); // Inspecciona aquí
 				setBodies(response.data.bodies);
 				setFilteredBodies(response.data.bodies);
 				setLoading(false);
 			} catch (err) {
+				console.error('Error al cargar los datos:', err);
 				setError('Error al cargar los datos. Intente nuevamente.');
 				setLoading(false);
 			}
